@@ -34,7 +34,7 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.4)
     execjs (2.2.2)
-    ffi (1.9.6)
+    ffi (1.9.6-x64-mingw32)
     font-awesome-sass (4.2.2)
       sass (~> 3.2)
     haml (4.0.6)
@@ -110,7 +110,7 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    sass (3.4.9)
+    sass (3.4.10)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -128,13 +128,21 @@ GEM
       hitimes
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2014.10)
+      tzinfo (>= 1.0.0)
     uber (0.0.13)
     uglifier (2.7.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    wdm (0.1.0)
+    win32-file (0.7.2)
+      ffi
+      win32-file-stat (>= 1.4.0)
+    win32-file-stat (1.5.1)
+      ffi
 
 PLATFORMS
-  ruby
+  x64-mingw32
 
 DEPENDENCIES
   bootstrap-sass (~> 3.3.1)
@@ -143,5 +151,7 @@ DEPENDENCIES
   middleman (~> 3.3.7)
   middleman-deploy (~> 1.0)
   middleman-livereload (~> 3.1.0)
+  ptools
   tzinfo-data
   wdm (~> 0.1.0)
+  win32-file
